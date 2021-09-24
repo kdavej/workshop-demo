@@ -35,7 +35,6 @@ import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 
 import { DragDropModule } from '@angular/cdk/drag-drop';
 
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   imports: [
@@ -65,7 +64,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatSnackBarModule,
     MatSortModule,
     MatTooltipModule,
-    BrowserAnimationsModule,
     MatTableModule,
     MatPaginatorModule,
     DragDropModule,
@@ -98,7 +96,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatSnackBarModule,
     MatSortModule,
     MatTooltipModule,
-    BrowserAnimationsModule,
     MatTableModule,
     MatPaginatorModule,
     DragDropModule,

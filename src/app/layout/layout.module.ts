@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LayoutComponent } from './components/layout/layout.component';
-import { routedComponents } from './layout-routing.module';
+import { LayoutRoutingModule, routedComponents } from './layout-routing.module';
 import { MaterialModule } from '../material.module';
 
 
@@ -13,11 +13,11 @@ import { MaterialModule } from '../material.module';
   ],
   imports: [
     CommonModule,
-    LayoutModule,
     MaterialModule,
+    LayoutRoutingModule,
   ],
   exports: [
-    routedComponents
+    routedComponents,
   ]
 })
 export class LayoutModule { }
