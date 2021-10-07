@@ -1,3 +1,16 @@
 <section class="map-controls" *ngIf="ready">
     <p>Map is ready!</p>
+    <p>Layers:</p>
+    <ul>
+        <li *ngFor="let layer of layerList">
+            {{layer.name}} - {{layer.id}}
+        </li>
+    </ul>
+    <p>Exent Info:</p>
+    <ul style="list-style: none;" *ngIf="extentInfo">
+        <li>xmin: {{extentInfo.xmin}}</li>
+        <li>xmax: {{extentInfo.xmax}}</li>
+        <li>ymin: {{extentInfo.ymin}}</li>
+        <li>ymax: {{extentInfo.ymax}}</li>
+    </ul>
 </section>
